@@ -1,0 +1,24 @@
+<footer>
+    <aside>
+        <div class="shr">
+            <a class="shr-button" title="Share this post on Twitter" data-action="share-on-twitter"
+               href="http://twitter.com/intent/tweet?url=http%3A%2F%2Fjjcoellov.es{{ include.post.url | url_encode }}&text={{ include.post.title | url_encode }}%20%E2%80%94%20Juanjo%20Coello&via=jjcoellov"
+               target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a class="shr-button" title="Share this post on Facebook" data-action="share-on-facebook"
+               href="https://www.facebook.com/dialog/share?app_id=729688137098043&display=popup&href=http://jjcoellov.es{{ include.post.url }}&redirect_uri=http://jjcoellov.es"
+               target="_blank">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+        </div>
+            <span class="post-meta">
+                <i class="fa fa-calendar post-meta-icon"></i><span class="h-tcolor-light">{{ include.post.date | date: "%b %d, %Y" }}</span>
+            </span>
+        {% if include.post.tags[0] != null %}
+            <span class="post-meta">
+                <i class="fa fa-tags post-meta-icon"></i><span class="h-tcolor-light">{{ include.post.tags | array_to_sentence_string }}</span>
+            </span>
+        {% endif %}
+    </aside>
+</footer>

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{% for post in site.posts limit:5 %}
+<article class="post h-vspace--l">
+    <header>
+        <span class="h-vspace home-date">
+            {{ post.date | date: "%b %d %Y" | upcase }}
+        </span>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    </header>
+    <div class="h-vspace">
+        {{ post.excerpt | strip_html | truncatewords: 50}}
+    </div>
+    <div class="">
+        <a class="read-more" href="{{ post.url }}" title="{{ post.title }}">Read more</a>
+    </div>
+</article>
+{% endfor %}
+<nav>
+    <a href="/archive/" class="next">View more articles</a>
+</nav>

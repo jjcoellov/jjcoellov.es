@@ -1,0 +1,26 @@
+---
+layout: post
+status: publish
+published: true
+title: El Ajedrez de 300
+author:
+  display_name: Juanjo
+  login: juanjo
+  email: juanjo@jjcoellov.es
+  url: http://www.jjcoellov.es
+author_login: juanjo
+author_email: juanjo@jjcoellov.es
+author_url: http://www.jjcoellov.es
+wordpress_id: 15
+wordpress_url: http://jjcoellov.es/2008/02/06/el-ajedrez-de-300/
+date: '2008-02-06 02:14:50 +0000'
+date_gmt: '2008-02-06 01:14:50 +0000'
+categories:
+- Humor
+tags: []
+---
+<p>La película <a href="http://www.imdb.com/title/tt0416449/" title="300 the movie">300</a> ha causado sensación. Y para resumir todo el argumento de la película (para los que tampoco sepan <a href="http://es.wikipedia.org/wiki/Batalla_de_las_Term%C3%B3pilas">la historia legendaria</a> que hay detrás) podemos remitirnos a esta imagen:</p>
+<p><a href="http://jjcoellov.es/blog/wp-content/uploads/2008/02/ajedrez-sparta.jpg" title="Ajedrez Sparta"></a></p>
+<p style="text-align: center"><a href="http://jjcoellov.es/blog/wp-content/uploads/2008/02/ajedrez-sparta.jpg" title="Ajedrez Sparta"><img src="http://jjcoellov.es/blog/wp-content/uploads/2008/02/ajedrez-sparta.jpg" alt="Ajedrez Sparta" height="411" width="420" /></a></p>
+<p>Y pensar que casi resisten, si no es por la intervención del <a href="http://www.franksreelreviews.com/reviews/2007/300.htm">feo</a> de la zona... Pensándolo en frío creo que a <a href="http://es.wikipedia.org/wiki/Her%C3%B3doto">Herodoto</a> se le trastocaron las cuentas.</p>
+<p align="right"><em><strong> Visto en:</strong> <a href="http://www.nopuedocreer.com/quelohayaninventado/5151/el-ajedrez-de-300/" title="No puedo creer que lo hayan inventado: Ajedrez de 300">nopuedocreer.com</a> </em></p>

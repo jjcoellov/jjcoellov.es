@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Algunos cambios en la apariencia del blog &mdash; Juanjo Coello</title>
+    <link rel="stylesheet" href="/css/foundation.css"/>
+    <link rel="stylesheet" href="/css/blog.css"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic' rel='stylesheet'
+          type='text/css'>
+    <script src="/js/vendor/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+<header class="h-vspace">
+    <div class="row">
+        <div class="small-12 small-centered columns text-center">
+            <hgroup>
+                <h1><a href="/" class="title-link">Juanjo Coello</a></h1>
+                <h6 class="subheader"><span class="hide-for-small inline">Software Developer & </span>Perpetual Wannabe
+                </h6>
+                <h6 class="subheader"><span class="hide-for-small inline">I tweet stuff at </span><a
+                        href="http://www.twitter.com/jjcoellov" title="@jjcoellov" target="_blank">@jjcoellov</a></h6>
+            </hgroup>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="text-center">
+        <ul class="inline-list h-inblock header-nav">
+            <li><a href="/"><i class="fa fa-home fa-lg"></i> <span>Home</span></a></li>
+            <li><a href="/about"><i class="fa fa-user fa-lg"></i> <span>About</span></a></li>
+            <li><a href="/archive"><i class="fa fa-archive fa-lg"></i> <span>Archive</span></a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="row articles h-vspace--l">
+    <article class="small-12 large-9 small-centered large-centered columns post">
+        <header class="h-vspace">
+            <h3>Algunos cambios en la apariencia del blog</h3>
+        </header>
+        <p>Qué grave es la vagancia y la procrastinación. El último capítulo ha sido las modificaciones que he ido añadiendo al blog.<br />
+En primer lugar, hay una nueva sección en el menú de la derecha llamada mis libros. Es un pequeño código que hace uso de mi <em>estantería</em> en <a href="http://www.anobii.com/">Anobii</a>, una red social enfocada a los libros y en la que acabo de ingresar (voy a probar un par de días, y luego intentaré escribir cómo me va).<br />
+Por otro lado, he añadido una característica a la cabecera que me gusta bastante: mostrar una imagen aleatoria cada vez que se carga la página. Hay varios <a href="http://wordpress.org/extend/plugins/random-image-selector/">plugins</a> para Wordpress que lo hacen, pero hacían más cosas de las que yo necesitaba, no se adaptaba muy bien a la forma en que está el código del blog (donde se define la imagen es en el css de la página, y no en el HTML) por lo que no quise complicarme mucho y al final tiré de JQuery para crear un código JavaScript bastante sencillo, que explicaré en el próximo post.<br />
+En general me gusta cómo va quedando la cosa. A veces me siento un inútil poniendo en práctica mi  nula experiencia en diseño web, pero al menos espero no estar haciendo demasiados destrozos al código. Eso sí, el <a href="https://addons.mozilla.org/es-ES/firefox/addon/1843">firebug</a> ya me tacha muchas líneas del CSS, cosa que supongo no debe estar nada bien. Por ahora, como se dice por la Facultad, <em>compila</em>.</p>
+
+        <footer>
+    <aside>
+        <div class="shr">
+            <a class="shr-button" title="Share this post on Twitter" data-action="share-on-twitter"
+               href="http://twitter.com/intent/tweet?url=http%3A%2F%2Fjjcoellov.es%2F2009%2F01%2F10%2Falgunos-cambios-en-la-apariencia-del-blog%2F&text=Algunos%20cambios%20en%20la%20apariencia%20del%20blog%20%E2%80%94%20Juanjo%20Coello&via=jjcoellov"
+               target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a class="shr-button" title="Share this post on Facebook" data-action="share-on-facebook"
+               href="https://www.facebook.com/dialog/share?app_id=729688137098043&display=popup&href=http://jjcoellov.es/2009/01/10/algunos-cambios-en-la-apariencia-del-blog/&redirect_uri=http://jjcoellov.es"
+               target="_blank">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+        </div>
+            <span class="post-meta">
+                <i class="fa fa-calendar post-meta-icon"></i><span class="h-tcolor-light">Jan 10, 2009</span>
+            </span>
+        
+    </aside>
+</footer>
+
+     </article>
+</div>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-3378868-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

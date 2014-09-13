@@ -1,0 +1,29 @@
+---
+layout: post
+status: publish
+published: true
+title: Java from the past
+author:
+  display_name: Juanjo
+  login: juanjo
+  email: juanjo@jjcoellov.es
+  url: http://www.jjcoellov.es
+author_login: juanjo
+author_email: juanjo@jjcoellov.es
+author_url: http://www.jjcoellov.es
+wordpress_id: 153
+wordpress_url: http://jjcoellov.es/?p=153
+date: '2010-11-04 19:17:38 +0000'
+date_gmt: '2010-11-04 18:17:38 +0000'
+categories:
+- Humor
+- Coding
+tags: []
+---
+<p>Por qué Java es un lenguaje from the past:</p>
+<pre lang="java" line="1">if (a != null && a.getFoo() != null && a.getFoo().getBar() != null 
+    && a.getFoo().getBar().getTutu() != null) 
+</pre>
+<p>En Groovy:</p>
+<pre lang="groovy" line="1">if (a?.foo?.bar?.tutu)</pre>
+<p>¿Quedó claro?</p>
