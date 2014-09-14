@@ -1,2 +1,4 @@
 _blog/
 .sass-cache/
+.idea/
+*.iml
