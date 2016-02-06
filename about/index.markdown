@@ -18,19 +18,23 @@ categories:
 - About
 tags: []
 ---
-My name is **Juan José Coello**, although I prefer you call me **Juanjo**. You can find me on several places on Internet as [@jjcoellov][twitter] and I'm a half Venezuelan / half Spanish Software Engineer working in [Acrede][acrede], a globall payroll solution company. Previously I worked in [Tuenti][tuenti]. My full professional profile can be found through [LinkedIn][linkedin].
+My name is **Juan José Coello**, although everyone calls me **Juanjo**. You can find me on Internet as [@jjcoellov][twitter]. I'm a half Venezuelan / half Spanish Software Engineer working in [Intuit][intuit], creating software for Small Business to help them become more productive and successful. Previously, I worked in a small startup called [Acrede][acrede] (acquired by Intuit) and the by-that-time spanish social network [Tuenti][tuenti]. My full professional profile can be found through [LinkedIn][linkedin].
 
-I have lived in Caracas (Venezuela), Tenerife (Spain), Barcelona (Spain) and now I'm living in a small but cozy island called Jersey (Channel Islands). I used to blog in spanish, but then I switched to english as many friends are anglophones. If you dig a bit on the [Archive](/archive) you can find some articles yet written in spanish.
+I have lived in Caracas (Venezuela), Tenerife (Spain), Barcelona (Spain), Jersey (Channel Islands) and now I'm one of the 8.5 million people residing in London (United Kingdom). Most of my articles are in spanish, but I decided to switch to english as many friends are anglophones. If you dig a bit on the [Archive](/archive) you can find several articles yet written in spanish.
 
-I'm mostly interesting in Technology and Productivity, but I blog about everything I find curious. I'm also lucky enough to have met really amazing [people][toni] that I interview from time to time. 
+I am mostly interesting in Technology, Finances and Productivity Tips, but I blog pretty much about everything I find interesting. Also, I am lucky enough to have met really amazing [people][toni] that I interview from time to time.
 
-You can reach me through **hola** **[AT]** **jjcoellov.es** or through my [twitter][twitter] account . 
+I continuously try to beat [procrastination][wbw], with mixed results so far. Keep trying, though.
+
+You can reach me through **hola** **[AT]** **jjcoellov.es** or through my [twitter][twitter] account .
 
 Aprendo, aprendo, aprendo...
 
 [acrede]: http://www.acrede.net
+[intuit]: http://www.intuit.com
 [tuenti]: http://www.tuenti.com
 [linkedin]: http://linkedin.com/in/jjcoellov
 [twitter]: http://www.twitter.com/jjcoellov
 [github]: http://github.com/jjcoellov
 [toni]: http://jjcoellov.es/2012/12/04/beers-talk-i-toni-cebrian/
+[wbw]: http://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html
