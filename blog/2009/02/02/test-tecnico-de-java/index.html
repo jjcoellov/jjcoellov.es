@@ -13,6 +13,15 @@
     <link rel="icon" type="image/png" href="/img/favicon.png">
     <script src="/js/vendor/modernizr.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3378868-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3378868-1');
+    </script>
 </head>
 
 <body>
@@ -94,7 +103,7 @@ public class OutputFooter extends TagSupport {
    
    public String Footer() {
       String html = "";
-      html = html + "";
+      html = html + "&lt;/body&gt;&lt;/html&gt;";
       return html;
    }
    
@@ -120,18 +129,18 @@ public class OutputFooter extends TagSupport {
 <p><strong>10- What's your preferred way of parsing incoming XML and why?</strong></p>
 <p><strong>11- Describe the stages involved in getting Ant, subversion and Eclipse working together to automatically build a tree from a subversion repository and deploy it to Tomcat.</strong></p>
 <p><strong>12- Discuss the relative merits of
-<pre lang="HTML"><c:import>
+<pre lang="HTML"><c:import>&lt;/pre&gt;
 <p> and
-<pre lang="HTML"><jsp:include>
-<p></p>
+<pre lang="HTML"><jsp:include>&lt;/pre&gt;
+<p>&lt;/strong&gt;</p>
 <p><strong>13- Discuss the difference between a custom tag which supports EL and one which supports RT.</strong></p>
 <p><strong>14- Describe (with code examples if possible) how you would use an EL based JSP fragment to iterate through a simple XML file and make decisions based on the values of certain nodes.</strong></p>
 <p><strong>15- The introduction of JSR-220 brought with it JPA. Hibernate is an open source ORM solution. Briefly describe, with a small example if possible, the impact JPA has had on the Hibernate project, and what steps would need to be taken to convert an existing hibernate project to conform with the JPA specification in JSR-220. What advantages to would this conversion bring?</strong></p>
 <p><strong>16- When using a persistence layer within a multi-threaded environment which has the potential for a long object lifetime, special precautions must be made to ensure the system can maintain a high degree of concurrency, and also work correctly in a clustered environment. Give a short explanation of the problem domain and a potential high-level solution.</strong></p>
 <p><strong>17- Explain the following method signature: </strong></p>
 <pre lang="Java">
-<t extends="" myobject=""> T getMyobject(Class<t> MyObjectType);
-
+<T extends="" Myobject=""> T getMyobject(Class<T> MyObjectType);
+&lt;/pre&gt;
 <p><strong>18- Explain the difference between phantom, soft, strong and weak references and  give a context they would be used in.</strong></p>
 <p><strong>19-Diagnose the following exception, found in the tomcat catalina.out file:</strong></p>
 <pre lang="text">
@@ -150,10 +159,10 @@ java.security.AccessControlException: access denied (java.net.SocketPermission 1
  	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:917)
  	at org.apache.taglibs.standard.tag.common.core.ImportSupport.acquireReader(ImportSupport.java:331) 
 ....... 
-
+&lt;/pre&gt;
 <p><strong>20- Design a simple three database table structure which would allow the creation, editing and publication of a webpage stored in a content management system. </strong></p>
 <p>Concurrencia, clústering, parsing XML, diseño DB, Templates..... En pocas palabras, <strong>la-le-che</strong> :P</p>
-</init></pre></t></t></pre></jsp:include></pre></p></c:import></pre></strong></p>
+</init></pre></T></T></pre></jsp:include></pre></p></c:import></pre></strong></p>
 
         <footer>
     <aside>
