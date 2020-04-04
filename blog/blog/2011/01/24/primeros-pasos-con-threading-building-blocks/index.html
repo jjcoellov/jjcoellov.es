@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Primeros pasos con Threading Building Blocks &mdash; Juanjo Coello</title>
+    <link rel="stylesheet" href="/css/foundation.min.css"/>
+    <link rel="stylesheet" href="/css/blog.css"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic' rel='stylesheet'
+          type='text/css'>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <script src="/js/vendor/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3378868-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3378868-1');
+    </script>
+</head>
+
+<body>
+
+<header class="h-vspace">
+    <div class="row">
+        <div class="small-12 small-centered columns text-center">
+            <hgroup>
+                <h1><a href="/" class="title-link">Juanjo Coello</a></h1>
+                <h6 class="subheader"><span class="hide-for-small inline">Software Developer & </span>Perpetual Wannabe
+                </h6>
+                <h6 class="subheader"><span class="hide-for-small inline">I tweet stuff at </span><a
+                        href="http://www.twitter.com/jjcoellov" title="@jjcoellov" target="_blank">@jjcoellov</a></h6>
+            </hgroup>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="text-center">
+        <ul class="inline-list h-inblock header-nav">
+            <li><a href="/"><i class="fa fa-home fa-lg"></i> <span>Home</span></a></li>
+            <li><a href="/about"><i class="fa fa-user fa-lg"></i> <span>About</span></a></li>
+            <li><a href="/archive"><i class="fa fa-archive fa-lg"></i> <span>Archive</span></a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="row articles h-vspace--l">
+    <article class="small-12 large-9 small-centered large-centered columns post">
+        <header class="h-vspace">
+            <h3>Primeros pasos con Threading Building Blocks</h3>
+        </header>
+        <p>Hace poco, como tema de una presentación en la Facultad, <a href="http://twitter.com/jmbarroso">@jmbarroso</a> y yo estuvimos “jugando” con una librería de paralelización de Intel de la que no tenía ni idea de su existencia y que me dejó francamente sorprendido. Se llama <strong>Threading Building Blocks</strong> (TBB), lleva algunos años en el mercado y en este post explicaré someramente qué es, para qué sirve, y qué viene a mejorar en el mundo de la paralelización.</p>
+<p><strong>TBB - Qué es</strong></p>
+<p>TBB es una librería escrita en C++, para programas hechos en este lenguaje (por ahora), que facilita la paralelización de los mismos en procesadores multicore gracias a las funciones y estructuras que provee. Su objetivo es lograr un paralelismo escalable, haciendo uso de C++ estándar, que además abstraiga al programador de los detalles de la plataforma y del manejo de hilos, que exprese el paralelismo de una manera más simple y que realice un mejor aprovechamiento de los recursos de los procesadores.</p>
+<p><strong>TBB - Ventajas</strong></p>
+<p>TBB permite expresar el paralelismo como <em>Tareas</em> en lugar de <em>Hilos</em>. De esta forma, no es necesaria llevar a cabo manualmente la gestión de los mismos: no más create, join, manage, etc. Dichas tareas son asignadas automáticamente a hilos, haciendo un uso eficiente de los recursos del procesador.</p>
+<p>Una característica curiosa es el uso de una técnica denominada <em>task stealing</em>; la librería se encarga de asignar/desasignar tareas entre procesadores de manera transparente al programador, según la carga de trabajo actual, para equilibrar el trabajo de todos. Toda esta “abstracción” permite desarrollar soluciones más simples de alto nivel.</p>
+<p>Además, es compatible con otros paquetes de paralelización, por lo que se puede optar por usar algunos componentes de TBB bajo ciertas circunstancias, y usar diferentes soluciones (<strong>OpenMP</strong>, gestión de hilos manualmente) en otras.</p>
+<p><strong>TBB - Contenido</strong></p>
+<p>La librería provee soluciones de distinta índole para facilitar la paralelización de las aplicaciones, que se pueden dividir en:</p>
+<p><strong>Algoritmos básicos:</strong><br />
+• parallel_for<br />
+• parallel_reduce<br />
+• parallel_scan</p>
+<p><strong>Algoritmos avanzados:</strong><br />
+• parallel_while<br />
+• parallel_do<br />
+• pipeline<br />
+• parallel_sort</p>
+<p><strong>Contenedores:</strong><br />
+• concurrent_queue<br />
+• concurrent_vector<br />
+• concurrent_hash_map</p>
+<p><strong>Reserva de memoria escalable:</strong><br />
+• scalable_malloc<br />
+• scalable_free<br />
+• scalable_realloc<br />
+• scalable_calloc</p>
+<p><strong>Exclusión mutua:</strong><br />
+• mutex<br />
+• spin_mutex<br />
+• queuing_mutex<br />
+• spin_rw_mutex<br />
+• queuing_rw_mutex<br />
+• recursive mutex</p>
+<p><strong>Operaciones atómicas</strong><br />
+• fetch_and_add<br />
+• fetch_and_increment<br />
+• fetch_and_decrement<br />
+• compare_and_swap<br />
+• fetch_and_store</p>
+<p><strong>Timing:</strong><br />
+• Método thread_save portable para procesar el tiempo transcurrido.</p>
+<p><strong>Planificador de tareas</strong><br />
+• Acceso directo para controlar la creación y la ejecución de tareas</p>
+<p><strong>Instalando TBB.</strong></p>
+<p>La última versión estable de la librería para Windows, Linux y Mac se puede encontrar <a href="http://www.threadingbuildingblocks.org/download.php">aquí</a>.</p>
+<p>La instalación resulta bastante sencilla. En mi caso con la versión para Mac OS, que no diferirá mucho de la disponible para Linux:</p>
+<p>Se descomprime el tgz descargado. Yo lo hice en un directorio de mi home donde instalo los frameworks y librerías que utilizo (grails, maven, gradle, mercurial, etc) pero /opt/ podría ser otra ubicación adecuada. También he creado un enlace simbólico “tbb” que apunte a la última versión, para usarlo al referirme a la librería, en vistas a simplemente actualizar el enlace en caso de que siga descargando en el futuro versiones de la librería y quiera cambiar fácilmente entre ellas:</p>
+<pre lang="text">
+juanjo:bin juanjo$ pwd
+/Users/juanjo/bin
+juanjo:bin juanjo$ ls -ltr
+drwxr-xr-x   4 juanjo  juanjo       136 24 ene 17:21 tbb30_20101215oss
+juanjo:bin juanjo$ ln -s tbb30_20101215oss/ tbb
+juanjo:bin juanjo$ ls -ltr
+drwxr-xr-x   4 juanjo  juanjo       136 24 ene 17:21 tbb30_20101215oss
+lrwxr-xr-x   1 juanjo  juanjo        22 24 ene 17:28 tbb -&gt; tbb30_20101215oss/
+</pre>
+<p>Es necesario modificar el archivo bin/tbbvars.sh para asignar a la variable <strong>TBB30_INSTALL_DIR</strong> la ruta al directorio raíz de la librería:</p>
+<pre lang="text">
+juanjo:tbb juanjo$ pwd
+juanjo:bin juanjo$/Users/juanjo/bin/tbb
+juanjo:bin juanjo$ cat -n bin/tbbvars.sh
+
+# Threading Building Blocks Home
+    30    TBB30_INSTALL_DIR=/Users/juanjo/bin/tbb
+</pre>
+<p>Cargamos las variables definidas en el fichero, que se deberá hacer cada vez que se abra una terminal y se desee trabajar con la librería. La alternativa es añadir la línea al fichero ~/.bash_profile para hacerlo automáticamente al cargar sesión:</p>
+<pre lang="text">
+juanjo:bin juanjo$ source bin/tbbvars.sh
+</pre>
+<p>Para probar si todo está configurado correctamente, intentamos compilar y ejecutar uno de los ejemplos incluídos en la distribución:</p>
+<pre lang="text">
+juanjo:tbb juanjo$ cd examples/GettingStarted/sub_string_finder/
+juanjo:sub_string_finder juanjo$ make
+g++ -O2 -DNDEBUG  -o sub_string_finder sub_string_finder.cpp -ltbb
+g++ -O2 -DNDEBUG  -o sub_string_finder_extended sub_string_finder_extended.cpp -ltbb
+g++ -O2 -DNDEBUG  -o sub_string_finder_pretty sub_string_finder_pretty.cpp -ltbb
+./sub_string_finder_extended
+Done building string.
+Done with serial version.
+Done with parallel version.
+Done validating results.
+Serial version ran in 8.01188 seconds
+Parallel version ran in 4.1834 seconds
+Resulting in a speedup of 1.91516
+</pre>
+<p>En efecto, todo funciona, y ya estamos en disposición de empezar a utilizar los componentes que nos provee TBB. De hecho, en el ejemplo que lanzamos se observa una de las bondades: un <a href="http://en.wikipedia.org/wiki/Speedup">speedup</a> del 91% que no está nada mal.</p>
+<p>En el próximo artículo veremos cómo hacer uso de los componentes incluídos en la librerías, paralelizando un código secuencial y desgranando el código fuente del mismo. </p>
+<p>Más información:</p>
+<p>• Página Oficial de <a href="http://www.threadingbuildingblocks.org/">Threading Building Blocks</a>.</p>
+
+        <footer>
+    <aside>
+        <div class="shr">
+            <a class="shr-button" title="Share this post on Twitter" data-action="share-on-twitter"
+               href="http://twitter.com/intent/tweet?url=http%3A%2F%2Fjjcoellov.es%2F2011%2F01%2F24%2Fprimeros-pasos-con-threading-building-blocks%2F&text=Primeros%20pasos%20con%20Threading%20Building%20Blocks%20%E2%80%94%20Juanjo%20Coello&via=jjcoellov"
+               target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </div>
+            <span class="post-meta">
+                <i class="fa fa-calendar post-meta-icon"></i><span class="h-tcolor-light">Jan 24, 2011</span>
+            </span>
+        
+    </aside>
+</footer>
+
+     </article>
+</div>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-3378868-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>
