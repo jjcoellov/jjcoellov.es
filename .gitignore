@@ -2,3 +2,4 @@ _blog/
 .sass-cache/
 .idea/
 *.iml
+.jekyll-cache/
