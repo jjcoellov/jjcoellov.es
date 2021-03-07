@@ -11,22 +11,11 @@ author:
 author_login: juanjo
 author_email: juanjo@jjcoellov.es
 author_url: http://www.jjcoellov.es
-wordpress_id: 277
-wordpress_url: http://jjcoellov.es/?p=277
 date: '2012-12-04 21:00:05 +0000'
 date_gmt: '2012-12-04 20:00:05 +0000'
-categories:
-- Tecnología
-- Informática
-- Universidad
-- Beers &amp; Talk
 tags:
-- haskell
-- hiphop
-- bigdata
 - machine learning
-- entrevista
-- minhash
+- beers & talk
 ---
 <p>Hace un par de días tuve la oportunidad de charlar un rato - birras mediante - con <strong>Toni Cebrián</strong> (<a href="http://www.twitter.com/tonicebrian" title="@tonicebrian">@tonicebrian</a>), que aparte de ser un auténtico crack de <a href="http://www.tid.es/" title="Telefónica Investigación y Desarrollo">Telefónica I+D</a> trabajando ahora mismo con temas de Machine Learning y Sistemas de Recomendación en <a href="http://www.tuenti.com/" title="Tuenti">Tuenti</a>, es mi compañero de equipo de fútbol sala. A continuación dejo algunos temas de los que estuvimos hablando que seguro que a muchos les resultarán interesantes. </p>
 <p>(Toni tiene un blog que es <em><strong>la caña</strong></em>: <a href="http://www.tonicebrian.com/" title="Toni Cebrián">http://www.tonicebrian.com/</a> y - cómo no - cuenta en GitHub: <a href="https://github.com/tonicebrian">https://github.com/tonicebrian</a>)</p>

@@ -1,2 +1,2 @@
-permalink: /:year/:month/:day/:title/
 destination: blog
+permalink: /:year/:month/:day/:title/

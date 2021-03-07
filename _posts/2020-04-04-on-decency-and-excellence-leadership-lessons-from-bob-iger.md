@@ -13,10 +13,10 @@ author_email: juanjo@jjcoellov.es
 author_url: http://www.jjcoellov.es
 date: '2020-04-04 14:30:00 +0000'
 date_gmt: '2020-04-04 13:30:00 +0000'
-categories:
-- Leadership
-- Management
-- Business
+tags:
+- business
+- leadership
+- books
 ---
 
 Lately, I have been reading more and more about business leadership beyond technology, which is the area I used to focus more on. Since I moved to Paris last year to take upon an engineering leadership position within [QuickBooks France](https://quickbooks.intuit.com/fr/), I have been more exposed to strategic decisions outside of the pure engineering function; part of my role now consists of having a voice on the office leadership team and contributing to the business’s success, not only as the representative of the product development team, but also in other areas, such as go-to-market, hiring, or general office well-being. This has definitely taken me out of my comfort zone, but it also has put in front of me a lot of challenges and opportunities to grow.

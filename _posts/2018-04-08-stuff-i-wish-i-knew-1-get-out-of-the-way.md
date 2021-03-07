@@ -13,9 +13,8 @@ author_email: juanjo@jjcoellov.es
 author_url: http://www.jjcoellov.es
 date: '2018-04-08 17:00:00 +0000'
 date_gmt: '2018-04-08 17:00:00 +0000'
-categories:
-- Stuff I wish I knew
-- Tech Lead
+tags:
+- management
 ---
 
 >*This is the first post of a series I plan to record for a younger me, in case I ever solve the time travel problem and send these posts back to the past. It might be useful for you in the present, too.*

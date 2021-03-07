@@ -58,6 +58,7 @@ a.title-link {
 
 .post footer {
     margin-top: 3rem;
+    margin-bottom: 3rem;
     line-height: 1.8em;
     font-size: 0.9em;
 }
@@ -143,7 +144,6 @@ a.title-link {
     .h-vspace--m { margin-bottom: 2rem; }
 
     .h-vspace--l { margin-bottom: 3rem; }
-
 
 @media only screen and (min-width: 40.063em) {
 

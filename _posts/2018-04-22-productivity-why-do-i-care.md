@@ -13,9 +13,9 @@ author_email: juanjo@jjcoellov.es
 author_url: http://www.jjcoellov.es
 date: '2018-04-22 17:00:00 +0000'
 date_gmt: '2018-04-22 17:00:00 +0000'
-categories:
-- Productivity
-- Goals
+tags:
+- productivity
+- goals
 ---
 
 I have been interested in Productivity since University when I noticed I did not have enough time in the day to do everything I wanted to (nor what was expected from me to do). At the beginning I was on a quest to find the "Holy Grail of Productivity", the one that will open the heaven doors for a world where projects are completed, lists of tasks are stroke-through on time and happiness floats in the air. It turns out I was wrong, as many other times, and such utopia does not exist.
@@ -29,5 +29,9 @@ So, when it comes to productivity, ***why do I care?***
 Later on,I noticed that **productivity is less about doing things but more about actually accomplishing goals**. It is not only about doing things for the sake of completing them; instead, it is about planning them in such a way that they become natural steps towards reaching something bigger. This could be a project, a life goal, etc. I realised productivity was not anymore about being busy doing things, but about being busy achieving things.
 
 Finally, once you get used to think about goals and projects and how to decompose them into tasks that align into the final picture, which you relentlessly focus on completing, you start to become selective in such goals. Now it is not anymore about being busy achieving things; **productivity becomes identifying what the important stuff is, what your purpose is, and how to get there.**
+
+I presented my current take on productivity to my colleagues: **What I talk about when I talk about Productivity**.
+
+<script async class="speakerdeck-embed" data-id="ea6365d1f5754569832daff0dfbec5a8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 Juanjo

@@ -30,14 +30,6 @@ tags:
 - cap theorem
 ---
 <p>Hace poco he terminado de leer el libro <a href="http://www.amazon.com/gp/product/0321826620" title="NoSQL Distilled" target="_blank">NoSql Distilled</a> [<strong>M. Fowler</strong> & <strong>P. Sadalange</strong>]. Es una introducción bastante concisa (unas 150 páginas) sobre NoSQL: Qué es, qué viene a cubrir en contraposición a las bases de datos relacionales de toda la vida, por qué surgieron, cuáles son los tipos de bases de datos NoSQL más famosos y algunos consejos sobre cuándo utilizar unos u otros. </p>
-<p>
-
-    <figure class="img-wrapper text-center">
-        <img src="http://jjcoellov.es/blog/wp-content/uploads/2012/10/nosql-229x300.jpeg" alt="" title="Nosql" width="229" height="300" class="alignright size-medium wp-image-262" />
-        <figcaption>NoSQL Distilled</figcaption>
-    </figure>
-    </a>
-</p>
 <p>No entra en mucho detalle en ninguno de los apartados que menciona, pero lo que cubren basta para aportar una idea general sobre NoSQL, qué hay bajo el paraguas de esta (por otra parte bastante laxa) definición, y las opciones que se tienen a la hora de elegir cuál es la mejor opción en la capa de persistencia de nuestra aplicación. </p>
 <p>Los primeros capítulos explican el motivo por el que el término NoSQL está en alza, así como los modelos de datos que se usan en este tipo de bases de datos (Aggregate Data Model). También explica cómo conseguir modelos distribuidos, bien a través del particionado (sharding) o la replicación, siendo ambas técnicas no excluyentes entre sí. </p>
 <p>En el capítulo de Consistencia, se explican los distintos conflictos que se pueden obtener, así como el <a href="http://en.wikipedia.org/wiki/CAP_theorem" title="CAP Theorem" target="_blank">teorema del CAP</a> (Consistency - Availability - Partition tolerance) y por qué (en principio) no se pueden conseguir las tres propiedades en un sistema distribuido. Otro apartado que podría tratarse como Consistencia es el de los Version Stamps, que ayudan a detectar conflictos de concurrencia entre versiones del mismo dato. La técnica de Map-Reduce (en la que se basa p.e. <a href="http://hadoop.apache.org/" title="Hadoop" target="_blank">Hadoop</a>) también es explicada más o menos en detalle. </p>
