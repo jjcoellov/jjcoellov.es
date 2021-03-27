@@ -1,2 +1,2 @@
-destination: blog
+destination: docs
 permalink: /:year/:month/:day/:title/
