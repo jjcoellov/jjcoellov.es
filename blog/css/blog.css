@@ -113,6 +113,7 @@ a.title-link {
 
 .home nav {
     display: block;
+    margin-bottom: 5em;
 }
 
 .home nav .next {
